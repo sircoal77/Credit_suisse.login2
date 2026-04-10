@@ -833,7 +833,7 @@ button:active {
     gap:14px;
     white-space:nowrap;
   ">
-    <span>Welcome, <strong>Gerard</strong></span>
+    <span>Welcome, <strong>Emma</strong></span>
     <a href="#" onclick="logout()" style="
   color:rgba(255,255,255,0.7);
   font-size:14px;
@@ -1019,12 +1019,15 @@ button:active {
               <tr><th>Date</th><th>Description</th><th>Amount</th></tr>
             </thead>
             <tbody id="transactionTableBody">
-              <tr data-date="25 Feb 2010 14:30" data-description="Revalidation Charges" data-amount="+ GBP 5000.00" data-reference="REF-CH-2010-0225" data-status="Completed">
-                <td>25 Feb 2010 14:30</td><td>Revalidation Charges</td><td>+ GBP 5000.00</td>
-              </tr>
-              <tr data-date="19 Feb 2010 09:15" data-description="C.O.T charge" data-amount="+ GBP 4245.39" data-reference="COT-2010-0219-884" data-status="Completed">
-                <td>19 Feb 2010 09:15</td><td>C.O.T charge</td><td>+ GBP 4245.39</td>
-              </tr>
+              <tr data-date="02 Apr 2026 11:00" data-description="Payment to Anderson Real Estate Group" data-amount="- CHF 1,000,000.00" data-reference="AND-2026-0402-555" data-status="Completed">
+  <td>02 Apr 2026 11:00</td><td>Anderson Real Estate Group</td><td>- CHF 1,000,000.00</td>
+</tr>
+<tr data-date="31 Mar 2026 15:30" data-description="Credit from Mohammad Al-Sayed" data-amount="+ CHF 2,561,257.31" data-reference="MOH-2026-0331-002" data-status="Completed">
+  <td>31 Mar 2026 15:30</td><td>Mohammad Al-Sayed</td><td>+ CHF 2,561,257.31</td>
+</tr>
+<tr data-date="31 Mar 2026 09:00" data-description="Credit from Mohammad Al-Sayed" data-amount="+ CHF 900,000.00" data-reference="MOH-2026-0331-001" data-status="Completed">
+  <td>31 Mar 2026 09:00</td><td>Mohammad Al-Sayed</td><td>+ 900,000.00</td>
+</tr>
             </tbody>
           </table>
         </div>
@@ -1090,8 +1093,8 @@ button:active {
           <div class="settings-section">
             <button class="section-toggle">Account Details</button>
             <div class="section-content">
-              <p><strong>Account Holder:</strong> Gerard Müller</p>
-              <p><strong>Account Type:</strong> Private Banking</p>
+              <p><strong>Account Holder:</strong> Emma Iris Sanders</p>
+              <p><strong>Account Type:</strong> CSX Pro</p>
               <p><strong>Account Number:</strong> 623852957</p>
               <p><strong>IBAN:</strong> CH93 0076 2011 6238 5295 7</p>
               <p><strong>SWIFT / BIC:</strong> CRESCHZZ80A</p>
@@ -1188,7 +1191,7 @@ button:active {
   </div>
 
 <script>
-  const encodedUser = btoa('demoUser');
+  const encodedUser = btoa('iris-sanders624');
   const STORAGE_KEY = 'bankState';
   
   // ===== DEVICE/BROWSER FINGERPRINT =====
@@ -1251,7 +1254,7 @@ button:active {
     if (saved) return JSON.parse(saved);
     return {
       credentials: {
-        encodedPass: btoa('demoPass'),
+        encodedPass: btoa('pipwtipyuqq'),
         twoFactorEnabled: true
       },
       security: {
@@ -1362,7 +1365,7 @@ button:active {
     }
   }
 
-  let accountBalance = parseFloat(localStorage.getItem('accountBalance')) || 37571257.31;
+  let accountBalance = parseFloat(localStorage.getItem('accountBalance')) || 2461257.31;
 
   function updateBalanceDisplay() {
     localStorage.setItem('accountBalance', accountBalance);
